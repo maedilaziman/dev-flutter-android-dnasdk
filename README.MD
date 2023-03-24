@@ -13,15 +13,12 @@ Flutter Android DNA SDK Development
 <br/>
 <h2>How To Install</h2>
 <br/>
-After donwloading SigmonSDK.framework, please open your project and then add SigmonSDK.framework to your project as shown below.
+After downloading dna_flutterplugin, please add dna_flutterplugin to your computer document, usually in windows is in C document.
 <br/>
-<img src="https://raw.githubusercontent.com/maedilaziman/dev-ios-sigmonsdk/master/Screenshots/IMG_01.png" width="300" />
+Add path in your pubspec.yaml to connect dna_flutterplugin with your flutter project,
+as shown below.
 <br/>
-Once you have successfully add SigmonSDK.framework, select the project in the Project navigator, and then open the General tab, look at 'Frameworks, Libraries, and Embedded Content',
-<br/>
-please choose Embed Without Signing in the SigmonSDK.framework as shown below.
-<br/>
-<img src="https://raw.githubusercontent.com/maedilaziman/dev-ios-sigmonsdk/master/Screenshots/IMG_02.png" width="300" />
+<img src="https://raw.githubusercontent.com/maedilaziman/dev-flutter-android-dnasdk/master/Screenshots/IMG_03.png" width="300" />
 <br/>
 Select info.plist and add App Transport Security Settings until Privacy - Location When In Use Usage Description as shown below.
 <br/>
