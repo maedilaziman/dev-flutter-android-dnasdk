@@ -138,9 +138,9 @@ After authentication success, you can call flutter_android_setUserData to login 
 <pre>
     <code>
 	Future<String> get flutter_setPhoneNumber async {
-    	final String phone = await _channel.invokeMethod('flutter_android_setUserData',<String, dynamic>{
+    		final String phone = await _channel.invokeMethod('flutter_android_setUserData',<String, dynamic>{
       		'phoneNumber': this.phoneNumber,
-    	});
+    		});
     		return phone;
   	}
    </code>
