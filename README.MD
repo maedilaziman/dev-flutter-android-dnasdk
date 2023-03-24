@@ -19,11 +19,11 @@ After downloading dna_flutterplugin, please add dna_flutterplugin to your comput
 Add path in your pubspec.yaml to connect dna_flutterplugin with your flutter project,
 as shown below.
 <br/>
-<img src="https://raw.githubusercontent.com/maedilaziman/dev-flutter-android-dnasdk/master/Screenshots/IMG_03.png" width="300" />
+<img src="https://raw.githubusercontent.com/maedilaziman/dev-flutter-android-dnasdk/master/Screenshots/IMG_03.png" width="400" />
 <br/>
 Add all dependencies library in app build.gradle as shown below.
 <br/>
-<img src="https://raw.githubusercontent.com/maedilaziman/dev-flutter-android-dnasdk/master/Screenshots/IMG_01.png" width="300" />
+<img src="https://raw.githubusercontent.com/maedilaziman/dev-flutter-android-dnasdk/master/Screenshots/IMG_01.png" width="400" />
 <br/>
 Below is all dependencies library:
 <pre>
@@ -115,11 +115,11 @@ Below is all dependencies library:
 <br/>
 Add dependencies in project build.gradle as shown below.
 <br/>
-<img src="https://raw.githubusercontent.com/maedilaziman/dev-flutter-android-dnasdk/master/Screenshots/IMG_02.png" width="300" />
+<img src="https://raw.githubusercontent.com/maedilaziman/dev-flutter-android-dnasdk/master/Screenshots/IMG_02.png" width="400" />
 <br/>
 Add tool replace in AndroidManifest as shown below.
 <br/>
-<img src="https://raw.githubusercontent.com/maedilaziman/dev-flutter-android-dnasdk/master/Screenshots/IMG_02.png" width="300" />
+<img src="https://raw.githubusercontent.com/maedilaziman/dev-flutter-android-dnasdk/master/Screenshots/IMG_02.png" width="400" />
 <br/>
 You have successfully add DNA Flutter Plugin to your project
 <h2>How To Use</h2>
