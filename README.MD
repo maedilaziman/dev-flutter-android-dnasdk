@@ -20,6 +20,10 @@ as shown below.
 <br/>
 <img src="https://raw.githubusercontent.com/maedilaziman/dev-flutter-android-dnasdk/master/Screenshots/IMG_03.png" width="300" />
 <br/>
+Add all dependencies library in app build.gradle as shown below.
+<br/>
+<img src="https://raw.githubusercontent.com/maedilaziman/dev-flutter-android-dnasdk/master/Screenshots/IMG_01.png" width="300" />
+<br/>
 Below is all dependencies library:
 <pre>
     <code>
@@ -107,10 +111,6 @@ Below is all dependencies library:
     implementation 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
    </code>
 </pre>
-<br/>
-Add all dependencies library in app build.gradle as shown below.
-<br/>
-<img src="https://raw.githubusercontent.com/maedilaziman/dev-flutter-android-dnasdk/master/Screenshots/IMG_01.png" width="300" />
 <br/>
 You have successfully add SigmonSDK.framework to your project
 <h2>How To Use</h2>
