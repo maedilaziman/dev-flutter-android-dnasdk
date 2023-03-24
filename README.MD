@@ -139,25 +139,20 @@ After authentication success, you can call flutter_android_setUserData to login 
     <code>
 	Future<String> get flutter_setPhoneNumber async {
     		final String phone = await _channel.invokeMethod('flutter_android_setUserData',<String, dynamic>{
-      		'phoneNumber': this.phoneNumber,
+      		   'phoneNumber': this.phoneNumber,
     		});
     		return phone;
   	}
    </code>
 </pre>
 <br/>
-Declare SMSDKMainSpeedTestUI and SMSDKMainSpeedTestMainUI classes as shown below.
-<br/>
-<img src="https://raw.githubusercontent.com/maedilaziman/dev-ios-sigmonsdk/master/Screenshots/IMG_05.png" width="300" />
-<br/>
-Initialize SMSDKMainSpeedTestUI and SMSDKMainSpeedTestMainUI classes as shown below.
-<br/>
-<img src="https://raw.githubusercontent.com/maedilaziman/dev-ios-sigmonsdk/master/Screenshots/IMG_06.png" width="300" />
-<br/>
-After you have initialize SMSDKMainSpeedTestUI and SMSDKMainSpeedTestMainUI classes, you can add startSpeedTest() action in your event. Like the image below.
-(startSpeedTest() method will return an empty string if there is no error message.)
-<br/>
-<img src="https://raw.githubusercontent.com/maedilaziman/dev-ios-sigmonsdk/master/Screenshots/IMG_07.png" width="300" />
-<br/>
-<b>Note:</b> before you access startSpeedTest() action, you must initialize SMSDKMainSpeedTestUI and SMSDKMainSpeedTestMainUI classes
+After success login, you can call other function to test the network, below is function to test the network
+<pre>
+    <code>
+	refresh_onCompleteGetTimeFinishDownload();
+	refresh_onCompleteGetTimeFinishUpload();
+	refresh_onCompleteGetLatestNetworkTestResult();
+   </code>
+</pre>
+For more details, you can see an example of calling all functions in the example flutter_test_call_dnasdk.
 <br/>
