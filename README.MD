@@ -15,6 +15,7 @@ Flutter Android DNA SDK Development
 <br/>
 After downloading dna_flutterplugin, please add dna_flutterplugin to your computer document, usually in windows is in C document.
 <br/>
+<br/>
 Add path in your pubspec.yaml to connect dna_flutterplugin with your flutter project,
 as shown below.
 <br/>
@@ -111,6 +112,14 @@ Below is all dependencies library:
     implementation 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
    </code>
 </pre>
+<br/>
+Add dependencies in project build.gradle as shown below.
+<br/>
+<img src="https://raw.githubusercontent.com/maedilaziman/dev-flutter-android-dnasdk/master/Screenshots/IMG_02.png" width="300" />
+<br/>
+Add tool replace in AndroidManifest as shown below.
+<br/>
+<img src="https://raw.githubusercontent.com/maedilaziman/dev-flutter-android-dnasdk/master/Screenshots/IMG_02.png" width="300" />
 <br/>
 You have successfully add SigmonSDK.framework to your project
 <h2>How To Use</h2>
