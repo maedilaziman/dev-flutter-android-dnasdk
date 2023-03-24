@@ -121,29 +121,28 @@ Add tool replace in AndroidManifest as shown below.
 <br/>
 <img src="https://raw.githubusercontent.com/maedilaziman/dev-flutter-android-dnasdk/master/Screenshots/IMG_02.png" width="300" />
 <br/>
-You have successfully add SigmonSDK.framework to your project
+You have successfully add DNA Flutter Plugin to your project
 <h2>How To Use</h2>
 <br/>
-Open your UIViewController class, then import SigmonSDK, in that class please implement protocol SMSDKMainSpeedTestComm and SMSDKMainSpeedTestSetCredentialComm as shown below.
-<br/>
-<img src="https://raw.githubusercontent.com/maedilaziman/dev-ios-sigmonsdk/master/Screenshots/IMG_04.png" width="300" />
-This set credential key is mandatory, you can't fill empty credential key
+Before you call network test, you need login first,
+first you need call flutter_android_initAuth for authentication
 <pre>
     <code>
-	func setCredentialKey() -> String {
-    	    return credentialKey
-	}
+	Future<void> refresh_onCompleteInitAuth() async {
+    await DnaSdkFlutterPlugin.flutter_android_initAuth ?? 'null_init_auth';
+    if (!mounted) return;
+  }
    </code>
 </pre>
-Before you can test speed, SDK will return info whether set credential key was successful or not, 
-if successful then the value of data.success = true,  
-and if not then the value of data.success = false, and data.error will provide information 
-about the error description
+After authentication success, you can call flutter_android_setUserData to login with phone number
 <pre>
     <code>
-	func onCompleteSetCredentialKey(data: CredentialKeyData) {
-    	    print("SDKTest_set_credential: \(data.success) ; Error: \(data.error)")
-	}
+	Future<String> get flutter_setPhoneNumber async {
+    final String phone = await _channel.invokeMethod('flutter_android_setUserData',<String, dynamic>{
+      'phoneNumber': this.phoneNumber,
+    });
+    return phone;
+  }
    </code>
 </pre>
 <br/>
