@@ -129,20 +129,20 @@ first you need call flutter_android_initAuth for authentication
 <pre>
     <code>
 	Future<void> refresh_onCompleteInitAuth() async {
-    await DnaSdkFlutterPlugin.flutter_android_initAuth ?? 'null_init_auth';
-    if (!mounted) return;
-  }
+    	  await DnaSdkFlutterPlugin.flutter_android_initAuth ?? 'null_init_auth';
+    	  if (!mounted) return;
+  	}
    </code>
 </pre>
 After authentication success, you can call flutter_android_setUserData to login with phone number
 <pre>
     <code>
 	Future<String> get flutter_setPhoneNumber async {
-    final String phone = await _channel.invokeMethod('flutter_android_setUserData',<String, dynamic>{
-      'phoneNumber': this.phoneNumber,
-    });
-    return phone;
-  }
+    	final String phone = await _channel.invokeMethod('flutter_android_setUserData',<String, dynamic>{
+      		'phoneNumber': this.phoneNumber,
+    	});
+    		return phone;
+  	}
    </code>
 </pre>
 <br/>
